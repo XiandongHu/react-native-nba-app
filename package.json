@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "clean": "find node_modules -type f -name .babelrc | grep -v /react-native/ | xargs rm",
+    "clean": "find node_modules -type f -name .babelrc | grep -v /react-native/ | xargs rm -f",
     "test": "standard --verbose | snazzy ./lib/**/*.js",
     "prestart": "npm run clean",
     "start": "node_modules/react-native/packager/packager.sh"
